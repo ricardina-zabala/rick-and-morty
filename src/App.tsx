@@ -32,11 +32,11 @@ function App() {
   return (
     <>
        <div className="app-container">
-      <h1>Rick y Morty Personajes</h1>
+      <h1 className='text-center text-4xl font-extrabold mb-8' >Rick y Morty Personajes</h1>
       <div className="grid grid-cols-3 gap-6 p-6">
         {personages.map((p, i) => (
           <div key={i} className="border border-gray-200 rounded-lg shadow-lg p-4 bg-white">
-            <img src={p.image} alt={p.name} />
+            <img className='w-full rounded-lg mb-4' src={p.image} alt={p.name} />
             <h2 className='text-xl font-bold text-gray-800'>{p.name}</h2>
             <p className='text-sm text-gray-500'>{p.species}</p>
           </div>
