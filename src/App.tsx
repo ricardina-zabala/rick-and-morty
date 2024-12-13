@@ -37,8 +37,8 @@ function App() {
         {personages.map((p, i) => (
           <div key={i} className="border border-gray-200 rounded-lg shadow-lg p-4 bg-white">
             <img src={p.image} alt={p.name} />
-            <h2>{p.name}</h2>
-            <p>{p.species}</p>
+            <h2 className='text-xl font-bold text-gray-800'>{p.name}</h2>
+            <p className='text-sm text-gray-500'>{p.species}</p>
           </div>
         ))}
       </div>
